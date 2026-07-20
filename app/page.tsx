@@ -11,7 +11,9 @@ import Subjects from "./components/Subjects";
 
 
 export default function Home() {
+
   return (
+
     <main className="min-h-screen bg-white">
 
 
@@ -19,19 +21,19 @@ export default function Home() {
       <Hero />
 
 
-      {/* Trust Section */}
+      {/* Trust Bar */}
       <TrustBar />
 
 
-      {/* Statistics */}
+      {/* Website Statistics */}
       <Statistics />
 
 
-      {/* Services */}
+      {/* Services Section */}
       <Services />
 
 
-      {/* Subjects */}
+      {/* Subjects Section */}
       <Subjects />
 
 
@@ -39,24 +41,23 @@ export default function Home() {
       <HowItWorks />
 
 
-      {/* Why Choose Us */}
+      {/* Why Choose StudyVertex */}
       <WhyChooseUs />
 
 
-      {/* Testimonials */}
+      {/* Student Testimonials */}
       <Testimonials />
 
 
-      {/* FAQ */}
+      {/* Frequently Asked Questions */}
       <FAQ />
 
 
-      {/* Call To Action */}
+      {/* Final CTA */}
       <CTA />
 
 
     </main>
+
   );
 }
-
-this is my previous code 
