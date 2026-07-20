@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-import Navbar from "./components/Navbar";
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
 
 export const metadata: Metadata = {
-  title: "StudyVertex",
-  description: "Assignment Help Website",
+  title: "StudyVertex - Expert Assignment Help",
+  description:
+    "Get expert assignment help, homework support and online tutors for students worldwide.",
 };
 
 export default function RootLayout({
@@ -15,12 +20,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-
-        <Navbar />
-
+      <body className={`${inter.variable} antialiased`}>
         {children}
-
       </body>
     </html>
   );
