@@ -9,41 +9,60 @@ export default function ServicesPage() {
       icon: "💻",
       slug: "programming-assignment-help",
     },
+
     {
-      title: "Engineering Assignments",
+      title: "Engineering Assignment Help",
       description: "Mechanical, Civil, Electrical and Electronics.",
       icon: "⚙️",
       slug: "engineering-assignment-help",
     },
+
     {
-      title: "MBA Projects",
+      title: "MBA Assignment Help",
       description: "Marketing, HR, Finance and Operations.",
       icon: "📈",
       slug: "mba-assignment-help",
     },
+
     {
-      title: "Nursing Assignments",
+      title: "Nursing Assignment Help",
       description: "Professional nursing and healthcare writing.",
       icon: "🏥",
       slug: "nursing-assignment-help",
     },
+
     {
       title: "Statistics Help",
       description: "SPSS, R, Excel and Data Analysis.",
       icon: "📊",
       slug: "statistics-help",
     },
+
     {
       title: "Essay Writing",
       description: "High-quality essays with proper citations.",
       icon: "📚",
       slug: "essay-writing",
     },
+
+    {
+      title: "Dissertation Help",
+      description: "Research support, writing and formatting help.",
+      icon: "🎓",
+      slug: "dissertation-help",
+    },
+
+    {
+      title: "Law Assignment Help",
+      description: "Legal research and academic writing support.",
+      icon: "⚖️",
+      slug: "law-assignment-help",
+    },
   ];
 
 
   return (
-    <main className="min-h-screen bg-gray-100 py-20">
+    <main className="min-h-screen py-20 bg-gray-100">
 
       <div className="max-w-6xl mx-auto px-6">
 
@@ -59,15 +78,16 @@ export default function ServicesPage() {
 
 
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
 
 
           {services.map((service) => (
 
             <div
               key={service.slug}
-              className="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition"
+              className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition"
             >
+
 
               <div className="text-4xl">
                 {service.icon}
@@ -79,7 +99,7 @@ export default function ServicesPage() {
               </h2>
 
 
-              <p className="text-gray-600 mt-3">
+              <p className="mt-3 text-gray-600">
                 {service.description}
               </p>
 
