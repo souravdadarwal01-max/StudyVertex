@@ -4,6 +4,47 @@ export const metadata = {
     "StudyVertex provides professional research paper help for students worldwide. Get expert assistance with research papers, academic writing, literature reviews, and university projects.",
 };
 
+
+// Service Schema
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+
+  "name": "Research Paper Help Service",
+
+  "serviceType": "Academic Research Paper Assistance",
+
+  "provider": {
+    "@type": "Organization",
+    "name": "StudyVertex",
+    "url": "https://studyvertex.in"
+  },
+
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "United States"
+    },
+    {
+      "@type": "Country",
+      "name": "United Kingdom"
+    },
+    {
+      "@type": "Country",
+      "name": "Australia"
+    },
+    {
+      "@type": "Country",
+      "name": "Canada"
+    }
+  ],
+
+  "description":
+    "StudyVertex provides research paper help services for students including academic research, literature reviews, research projects, citations, formatting, and university academic writing support."
+};
+
+
+
 export default function ResearchPaperHelp() {
   return (
     <main className="max-w-5xl mx-auto px-6 py-10">
@@ -146,6 +187,17 @@ export default function ResearchPaperHelp() {
         Connect with StudyVertex today for professional research assistance
         designed around your academic goals.
       </p>
+
+
+
+      {/* Service Schema */}
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(serviceSchema),
+        }}
+      />
 
 
     </main>
