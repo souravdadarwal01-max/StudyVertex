@@ -1,3 +1,4 @@
+import Link from "next/link";
 export const metadata = {
   title: "Canada Assignment Help Service | Academic Assistance for Canadian Students - StudyVertex",
   description:
@@ -128,6 +129,98 @@ export default function CanadaAssignmentHelp() {
       </p>
 
 
+    <section className="mt-12">
+
+  <h2 className="text-3xl font-bold mb-6">
+    Related Assignment Help Services
+  </h2>
+
+
+  <div className="grid md:grid-cols-2 gap-4">
+
+
+    <Link
+      href="/assignment-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Assignment Help
+    </Link>
+
+
+    <Link
+      href="/essay-writing-service"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Essay Writing Service
+    </Link>
+
+
+    <Link
+      href="/research-paper-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Research Paper Help
+    </Link>
+
+
+    <Link
+      href="/homework-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Homework Help
+    </Link>
+
+
+  </div>
+
+</section>
+
+
+<section className="mt-12">
+
+  <h2 className="text-3xl font-bold mb-6">
+    Subject Based Assignment Help Canada
+  </h2>
+
+
+  <div className="grid md:grid-cols-2 gap-4">
+
+
+    <Link
+      href="/engineering-assignment-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Engineering Assignment Help Canada
+    </Link>
+
+
+    <Link
+      href="/mba-assignment-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      MBA Assignment Help Canada
+    </Link>
+
+
+    <Link
+      href="/computer-science-assignment-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Computer Science Assignment Help Canada
+    </Link>
+
+
+    <Link
+      href="/nursing-assignment-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Nursing Assignment Help Canada
+    </Link>
+
+
+  </div>
+
+</section>
     </main>
   );
 }
