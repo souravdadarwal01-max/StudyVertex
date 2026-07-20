@@ -1,3 +1,4 @@
+import Link from "next/link";
 export const metadata = {
   title: "Nursing Assignment Help Online | Expert Nursing Academic Support - StudyVertex",
   description:
@@ -129,6 +130,98 @@ export default function NursingAssignmentHelp() {
       </p>
 
 
+   <section className="mt-12">
+
+  <h2 className="text-3xl font-bold mb-6">
+    Related Academic Services
+  </h2>
+
+
+  <div className="grid md:grid-cols-2 gap-4">
+
+
+    <Link
+      href="/assignment-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      General Assignment Help
+    </Link>
+
+
+    <Link
+      href="/research-paper-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Research Paper Help
+    </Link>
+
+
+    <Link
+      href="/essay-writing-service"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Essay Writing Service
+    </Link>
+
+
+    <Link
+      href="/homework-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Homework Help
+    </Link>
+
+
+  </div>
+
+</section>
+
+
+<section className="mt-12">
+
+  <h2 className="text-3xl font-bold mb-6">
+    Nursing Assignment Help For International Students
+  </h2>
+
+
+  <div className="grid md:grid-cols-2 gap-4">
+
+
+    <Link
+      href="/usa-assignment-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Nursing Assignment Help USA
+    </Link>
+
+
+    <Link
+      href="/uk-assignment-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Nursing Assignment Help UK
+    </Link>
+
+
+    <Link
+      href="/australia-assignment-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Nursing Assignment Help Australia
+    </Link>
+
+
+    <Link
+      href="/canada-assignment-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Nursing Assignment Help Canada
+    </Link>
+
+
+  </div>
+
+</section>
     </main>
   );
 }
