@@ -26,10 +26,13 @@ export default function Navbar() {
 
 
 
+        {/* Menu */}
+
         <div className="flex gap-6 items-center">
 
 
           {/* Home */}
+
           <Link
             href="/"
             className="hover:text-blue-700"
@@ -39,7 +42,9 @@ export default function Navbar() {
 
 
 
+
           {/* Services Dropdown */}
+
           <div
             className="relative"
             onMouseEnter={() => setServicesOpen(true)}
@@ -53,9 +58,8 @@ export default function Navbar() {
 
             {servicesOpen && (
 
-              <div
-                className="absolute top-8 left-0 bg-white shadow-lg rounded-lg w-64 p-3"
-              >
+              <div className="absolute top-8 left-0 bg-white shadow-lg rounded-lg w-64 p-3">
+
 
                 <Link
                   href="/services/programming-assignment-help"
@@ -89,11 +93,28 @@ export default function Navbar() {
                 </Link>
 
 
+                <Link
+                  href="/services/statistics-help"
+                  className="block px-3 py-2 hover:bg-gray-100 rounded"
+                >
+                  Statistics Help
+                </Link>
+
+
+                <Link
+                  href="/services/essay-writing"
+                  className="block px-3 py-2 hover:bg-gray-100 rounded"
+                >
+                  Essay Writing
+                </Link>
+
+
               </div>
 
             )}
 
           </div>
+
 
 
 
@@ -116,9 +137,16 @@ export default function Navbar() {
 
             {subjectsOpen && (
 
-              <div
-                className="absolute top-8 left-0 bg-white shadow-lg rounded-lg w-56 p-3"
-              >
+              <div className="absolute top-8 left-0 bg-white shadow-lg rounded-lg w-72 p-3">
+
+
+                <Link
+                  href="/subjects/computer-science-it"
+                  className="block px-3 py-2 hover:bg-gray-100 rounded"
+                >
+                  Computer Science & IT
+                </Link>
+
 
 
                 <Link
@@ -129,21 +157,6 @@ export default function Navbar() {
                 </Link>
 
 
-                <Link
-                  href="/subjects/management"
-                  className="block px-3 py-2 hover:bg-gray-100 rounded"
-                >
-                  Management
-                </Link>
-
-
-                <Link
-                  href="/subjects/computer-science"
-                  className="block px-3 py-2 hover:bg-gray-100 rounded"
-                >
-                  Computer Science
-                </Link>
-
 
                 <Link
                   href="/subjects/mathematics"
@@ -153,12 +166,59 @@ export default function Navbar() {
                 </Link>
 
 
+
                 <Link
-                  href="/subjects/business"
+                  href="/subjects/business-management"
                   className="block px-3 py-2 hover:bg-gray-100 rounded"
                 >
-                  Business Studies
+                  Business & Management
                 </Link>
+
+
+
+                <Link
+                  href="/subjects/science"
+                  className="block px-3 py-2 hover:bg-gray-100 rounded"
+                >
+                  Science
+                </Link>
+
+
+
+                <Link
+                  href="/subjects/healthcare-nursing"
+                  className="block px-3 py-2 hover:bg-gray-100 rounded"
+                >
+                  Healthcare & Nursing
+                </Link>
+
+
+
+                <Link
+                  href="/subjects/arts-humanities"
+                  className="block px-3 py-2 hover:bg-gray-100 rounded"
+                >
+                  Arts & Humanities
+                </Link>
+
+
+
+                <Link
+                  href="/subjects/finance-accounting"
+                  className="block px-3 py-2 hover:bg-gray-100 rounded"
+                >
+                  Finance & Accounting
+                </Link>
+
+
+
+                <Link
+                  href="/subjects/research-writing"
+                  className="block px-3 py-2 hover:bg-gray-100 rounded"
+                >
+                  Research & Writing
+                </Link>
+
 
 
               </div>
@@ -166,6 +226,7 @@ export default function Navbar() {
             )}
 
           </div>
+
 
 
 
@@ -179,6 +240,7 @@ export default function Navbar() {
           >
             Blogs
           </Link>
+
 
 
 
@@ -208,6 +270,7 @@ export default function Navbar() {
 
 
 
+
           {/* Login */}
 
           <Link
@@ -216,6 +279,7 @@ export default function Navbar() {
           >
             Login
           </Link>
+
 
 
 
