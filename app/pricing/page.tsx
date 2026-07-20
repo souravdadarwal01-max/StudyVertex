@@ -3,7 +3,7 @@ export default function PricingPage() {
   const plans = [
     {
       title: "Basic",
-      price: "$19",
+      price: "$59",
       description: "For simple assignments and quick academic support.",
       features: [
         "Assignment Review",
@@ -17,7 +17,7 @@ export default function PricingPage() {
 
     {
       title: "Standard",
-      price: "$49",
+      price: "$99",
       description: "Most popular plan for university students.",
       features: [
         "Complete Assignment Solution",
@@ -33,7 +33,7 @@ export default function PricingPage() {
 
     {
       title: "Premium",
-      price: "$99",
+      price: "$199",
       description: "For complex projects and urgent deadlines.",
       features: [
         "Dedicated Expert Tutor",
