@@ -1,8 +1,34 @@
 export const subjects = {
-  engineering: {
-    title: "Engineering Assignment Help",
+  "computer-science-it": {
+    icon: "💻",
+    title: "Computer Science & IT",
     description:
-      "Professional Engineering assignment help for university students worldwide.",
+      "Programming, Software Development, AI, Data Science and IT Assignment Help.",
+
+    subjects: [
+      "Computer Science",
+      "Information Technology",
+      "Software Engineering",
+      "Python",
+      "Java",
+      "C++",
+      "JavaScript",
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Data Science",
+      "Cyber Security",
+      "Cloud Computing",
+      "Database Management",
+      "Operating Systems",
+      "Computer Networks",
+    ],
+  },
+
+  engineering: {
+    icon: "⚙️",
+    title: "Engineering",
+    description:
+      "Professional Engineering Assignment Help for university students.",
 
     subjects: [
       "Mechanical Engineering",
@@ -11,165 +37,126 @@ export const subjects = {
       "Electronics Engineering",
       "Chemical Engineering",
       "Computer Engineering",
-      "Software Engineering",
       "Automobile Engineering",
-      "Aerospace Engineering",
       "Industrial Engineering",
-      "Environmental Engineering",
-      "Petroleum Engineering",
-      "Mining Engineering",
-      "Biomedical Engineering",
-      "Robotics Engineering",
-    ],
-  },
-
-  "computer-science-it": {
-    title: "Computer Science & IT Assignment Help",
-
-    description:
-      "Programming, software development and IT assignment experts.",
-
-    subjects: [
-      "Computer Science",
-      "Information Technology",
-      "Python",
-      "Java",
-      "C++",
-      "JavaScript",
-      "React",
-      "Node.js",
-      "Artificial Intelligence",
-      "Machine Learning",
-      "Cyber Security",
-      "Cloud Computing",
-      "Database",
-      "Operating Systems",
-      "Computer Networks",
+      "Robotics",
+      "CAD/CAM",
+      "Thermodynamics",
+      "Fluid Mechanics",
     ],
   },
 
   mathematics: {
-    title: "Mathematics Assignment Help",
-
+    icon: "📐",
+    title: "Mathematics",
     description:
-      "Expert Mathematics tutors for school, college and university assignments.",
+      "Mathematics assignment experts.",
 
     subjects: [
       "Calculus",
       "Algebra",
       "Statistics",
       "Probability",
-      "Geometry",
       "Linear Algebra",
-      "Discrete Mathematics",
-      "Numerical Methods",
-      "Trigonometry",
       "Differential Equations",
+      "Numerical Methods",
+      "Discrete Mathematics",
     ],
   },
 
   "business-management": {
-    title: "Business & Management Assignment Help",
-
+    icon: "📈",
+    title: "Business & Management",
     description:
-      "MBA, BBA and Business Management assignment assistance.",
+      "MBA and Business Management assignment help.",
 
     subjects: [
       "MBA",
       "Marketing",
+      "Finance",
       "Human Resource",
-      "Business Strategy",
-      "Project Management",
       "Operations Management",
-      "Supply Chain",
-      "Leadership",
-      "Entrepreneurship",
       "Business Analytics",
+      "Entrepreneurship",
+      "Supply Chain",
     ],
   },
 
   science: {
-    title: "Science Assignment Help",
-
+    icon: "🔬",
+    title: "Science",
     description:
-      "Professional science assignment solutions.",
+      "Physics, Chemistry and Biology assignment help.",
 
     subjects: [
       "Physics",
       "Chemistry",
       "Biology",
+      "Biotechnology",
       "Environmental Science",
-      "Earth Science",
-      "Astronomy",
     ],
   },
 
   "healthcare-nursing": {
-    title: "Healthcare & Nursing Assignment Help",
-
+    icon: "🏥",
+    title: "Healthcare & Nursing",
     description:
-      "Nursing and healthcare assignment experts.",
+      "Healthcare and Nursing assignment experts.",
 
     subjects: [
       "Nursing",
-      "Public Health",
-      "Pharmacology",
       "Medical Science",
-      "Healthcare Management",
+      "Pharmacology",
       "Anatomy",
       "Physiology",
+      "Public Health",
     ],
   },
 
   "arts-humanities": {
-    title: "Arts & Humanities Assignment Help",
-
+    icon: "🎨",
+    title: "Arts & Humanities",
     description:
-      "Assignments for arts, literature and humanities students.",
+      "Arts and Humanities assignment help.",
 
     subjects: [
-      "History",
       "English Literature",
-      "Philosophy",
-      "Political Science",
+      "History",
+      "Psychology",
       "Sociology",
-      "Anthropology",
+      "Political Science",
       "Geography",
     ],
   },
 
   "finance-accounting": {
-    title: "Finance & Accounting Assignment Help",
-
+    icon: "💰",
+    title: "Finance & Accounting",
     description:
-      "Finance and Accounting experts for university students.",
+      "Finance and Accounting assignment help.",
 
     subjects: [
       "Accounting",
-      "Corporate Finance",
-      "Taxation",
       "Auditing",
+      "Taxation",
+      "Corporate Finance",
       "Investment",
-      "Economics",
-      "Financial Management",
     ],
   },
 
   "research-writing": {
-    title: "Research & Writing Help",
-
+    icon: "📚",
+    title: "Research & Writing",
     description:
-      "Research papers, dissertations and academic writing support.",
+      "Research paper and dissertation writing services.",
 
     subjects: [
-      "Essay Writing",
+      "Research Paper",
       "Dissertation",
-      "Research Proposal",
-      "Case Study",
       "Thesis",
       "Literature Review",
-      "Report Writing",
-      "Referencing",
+      "Essay Writing",
+      "Case Study",
     ],
   },
 };
