@@ -1,3 +1,4 @@
+import Link from "next/link";
 export const metadata = {
   title: "Assignment Help Service | Expert Academic Assistance - StudyVertex",
   description:
@@ -98,6 +99,137 @@ export default function AssignmentHelp() {
       </p>
 
 
+  <section className="mt-12">
+
+  <h2 className="text-3xl font-bold mb-6">
+    Assignment Help By Subject
+  </h2>
+
+
+  <div className="grid md:grid-cols-2 gap-4">
+
+
+    <Link
+      href="/engineering-assignment-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Engineering Assignment Help
+    </Link>
+
+
+    <Link
+      href="/mba-assignment-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      MBA Assignment Help
+    </Link>
+
+
+    <Link
+      href="/computer-science-assignment-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Computer Science Assignment Help
+    </Link>
+
+
+    <Link
+      href="/nursing-assignment-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Nursing Assignment Help
+    </Link>
+
+
+  </div>
+
+</section>
+
+
+<section className="mt-12">
+
+  <h2 className="text-3xl font-bold mb-6">
+    Assignment Help For Students Worldwide
+  </h2>
+
+
+  <div className="grid md:grid-cols-2 gap-4">
+
+
+    <Link
+      href="/usa-assignment-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Assignment Help USA
+    </Link>
+
+
+    <Link
+      href="/uk-assignment-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Assignment Help UK
+    </Link>
+
+
+    <Link
+      href="/australia-assignment-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Assignment Help Australia
+    </Link>
+
+
+    <Link
+      href="/canada-assignment-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Assignment Help Canada
+    </Link>
+
+
+  </div>
+
+</section>
+
+
+<section className="mt-12">
+
+  <h2 className="text-3xl font-bold mb-6">
+    Related Academic Services
+  </h2>
+
+
+  <div className="grid md:grid-cols-2 gap-4">
+
+
+    <Link
+      href="/homework-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Homework Help
+    </Link>
+
+
+    <Link
+      href="/essay-writing-service"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Essay Writing Service
+    </Link>
+
+
+    <Link
+      href="/research-paper-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Research Paper Help
+    </Link>
+
+
+  </div>
+
+</section>
     </main>
   );
 }
