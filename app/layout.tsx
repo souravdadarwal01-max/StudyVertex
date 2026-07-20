@@ -19,6 +19,7 @@ export const metadata: Metadata = {
 };
 
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -38,6 +39,8 @@ export default function RootLayout({
 
         "name": "StudyVertex",
 
+        "alternateName": "StudyVertex Assignment Help",
+
         "url": "https://studyvertex.in",
 
         "logo": {
@@ -46,8 +49,34 @@ export default function RootLayout({
         },
 
         "description":
-          "StudyVertex provides assignment help, homework assistance, essay writing support and research paper help for students worldwide."
+          "StudyVertex provides expert assignment help, homework assistance, essay writing support and research paper help for students worldwide.",
+
+
+        "contactPoint": {
+
+          "@type": "ContactPoint",
+
+          "contactType": "customer support",
+
+          "availableLanguage": [
+            "English"
+          ]
+
+        },
+
+
+        "sameAs": [
+
+          "https://www.facebook.com/studyvertex",
+
+          "https://www.instagram.com/studyvertex",
+
+          "https://www.linkedin.com/company/studyvertex"
+
+        ]
+
       },
+
 
 
       {
@@ -59,8 +88,11 @@ export default function RootLayout({
 
         "name": "StudyVertex",
 
+
         "publisher": {
+
           "@id": "https://studyvertex.in/#organization"
+
         },
 
 
@@ -69,10 +101,12 @@ export default function RootLayout({
           "@type": "SearchAction",
 
           "target": {
+
             "@type": "EntryPoint",
 
             "urlTemplate":
               "https://studyvertex.in/search?q={search_term_string}"
+
           },
 
           "query-input":
@@ -87,6 +121,7 @@ export default function RootLayout({
   };
 
 
+
   return (
 
     <html lang="en">
@@ -94,7 +129,7 @@ export default function RootLayout({
       <body className={inter.className}>
 
 
-        {/* Schema Markup */}
+        {/* Global SEO Schema */}
 
         <script
           type="application/ld+json"
@@ -104,19 +139,27 @@ export default function RootLayout({
         />
 
 
+
         {/* Navbar */}
+
         <Navbar />
 
 
-        {/* Main Content */}
+
+        {/* Page Content */}
+
         {children}
 
 
-        {/* Floating WhatsApp Button */}
+
+        {/* WhatsApp Button */}
+
         <WhatsAppButton />
 
 
+
         {/* Footer */}
+
         <Footer />
 
 
