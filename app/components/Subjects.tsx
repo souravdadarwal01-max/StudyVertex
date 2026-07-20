@@ -1,96 +1,128 @@
-import Link from "next/link";
-
 export default function Subjects() {
-  const subjects = [
-    {
-      icon: "💻",
-      name: "Programming",
-      link: "/programming",
-    },
-    {
-      icon: "📈",
-      name: "MBA",
-      link: "/mba",
-    },
-    {
-      icon: "🏥",
-      name: "Nursing",
-      link: "/nursing",
-    },
-    {
-      icon: "⚙️",
-      name: "Engineering",
-      link: "/engineering",
-    },
-    {
-      icon: "⚖️",
-      name: "Law",
-      link: "/law",
-    },
-    {
-      icon: "💰",
-      name: "Finance",
-      link: "/finance",
-    },
-    {
-      icon: "📊",
-      name: "Accounting",
-      link: "/accounting",
-    },
-    {
-      icon: "📢",
-      name: "Marketing",
-      link: "/marketing",
-    },
-    {
-      icon: "🧠",
-      name: "Psychology",
-      link: "/psychology",
-    },
-    {
-      icon: "📚",
-      name: "Dissertation",
-      link: "/dissertation",
-    },
-  ];
 
-  return (
-    <section className="py-20 bg-gray-100">
-      <div className="max-w-7xl mx-auto px-6">
 
-        <h2 className="text-4xl font-bold text-center text-blue-600">
-          Subjects We Cover
-        </h2>
+const subjects = [
 
-        <p className="text-center text-gray-600 mt-3">
-          Get expert help in more than 100 academic subjects.
-        </p>
+{
+title:"Computer Science & IT",
+icon:"💻",
+link:"/subjects/computer-science-it"
+},
 
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-6 mt-12">
+{
+title:"Engineering",
+icon:"⚙️",
+link:"/subjects/engineering"
+},
 
-          {subjects.map((subject) => (
-            <Link
-              key={subject.name}
-              href={subject.link}
-              className="bg-white rounded-xl shadow hover:shadow-xl transition hover:-translate-y-2 p-8 text-center"
-            >
-              <div className="text-5xl">
-                {subject.icon}
-              </div>
+{
+title:"Mathematics",
+icon:"📐",
+link:"/subjects/mathematics"
+},
 
-              <h3 className="mt-5 text-xl font-bold">
-                {subject.name}
-              </h3>
+{
+title:"Business & Management",
+icon:"📈",
+link:"/subjects/business-management"
+},
 
-              <p className="mt-3 text-blue-600 font-semibold">
-                Learn More →
-              </p>
-            </Link>
-          ))}
+{
+title:"Science",
+icon:"🔬",
+link:"/subjects/science"
+},
 
-        </div>
+{
+title:"Healthcare & Nursing",
+icon:"🏥",
+link:"/subjects/healthcare-nursing"
+},
 
-      </div>
-    </section>
-  );
+{
+title:"Arts & Humanities",
+icon:"🎨",
+link:"/subjects/arts-humanities"
+},
+
+{
+title:"Finance & Accounting",
+icon:"💰",
+link:"/subjects/finance-accounting"
+},
+
+{
+title:"Research & Writing",
+icon:"📚",
+link:"/subjects/research-writing"
+}
+
+];
+
+
+return (
+
+<section className="bg-gray-100 py-16 px-6">
+
+
+<div className="max-w-6xl mx-auto">
+
+
+<h2 className="text-4xl font-bold text-center">
+Explore Subjects
+</h2>
+
+
+<p className="text-center text-gray-600 mt-3">
+Expert help available across multiple academic disciplines.
+</p>
+
+
+
+<div className="grid md:grid-cols-3 gap-6 mt-10">
+
+
+{subjects.map((subject)=>(
+
+
+<a
+key={subject.title}
+href={subject.link}
+className="bg-white rounded-xl p-6 shadow hover:shadow-lg transition"
+>
+
+
+<div className="text-4xl">
+{subject.icon}
+</div>
+
+
+<h3 className="font-bold text-xl text-blue-700 mt-3">
+{subject.title}
+</h3>
+
+
+<span className="block mt-3 text-blue-700">
+Explore →
+</span>
+
+
+</a>
+
+
+))}
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+);
+
+
 }
