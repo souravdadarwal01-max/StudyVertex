@@ -1,60 +1,129 @@
-import Hero from "./components/Hero";
-import Services from "./components/Services";
-import HowItWorks from "./components/HowItWorks";
-import WhyChooseUs from "./components/WhyChooseUs";
-import Testimonials from "./components/Testimonials";
-import FAQ from "./components/FAQ";
-import CTA from "./components/CTA";
-import TrustBar from "./components/TrustBar";
-import Statistics from "./components/Statistics";
-import Subjects from "./components/Subjects";
+import Link from "next/link";
+
+export default function Services() {
+
+  const services = [
+    {
+      icon: "💻",
+      title: "Programming Assignment Help",
+      description:
+        "Python, Java, C++, JavaScript and more.",
+      link:
+        "/services/programming-assignment-help",
+    },
+
+    {
+      icon: "⚙️",
+      title: "Engineering Assignment Help",
+      description:
+        "Mechanical, Civil, Electrical and Electronics.",
+      link:
+        "/services/engineering-assignment-help",
+    },
+
+    {
+      icon: "📈",
+      title: "MBA Assignment Help",
+      description:
+        "Marketing, HR, Finance and Operations.",
+      link:
+        "/services/mba-assignment-help",
+    },
+
+    {
+      icon: "🏥",
+      title: "Nursing Assignment Help",
+      description:
+        "Professional nursing and healthcare writing.",
+      link:
+        "/services/nursing-assignment-help",
+    },
+
+    {
+      icon: "📊",
+      title: "Statistics Help",
+      description:
+        "SPSS, R, Excel and Data Analysis.",
+      link:
+        "/services/statistics-help",
+    },
+
+    {
+      icon: "📚",
+      title: "Essay Writing Help",
+      description:
+        "High-quality essays with proper citations.",
+      link:
+        "/services/essay-writing",
+    },
+  ];
 
 
-export default function Home() {
   return (
-    <main className="min-h-screen bg-white">
+
+    <section className="py-16 px-6 bg-white">
+
+      <div className="max-w-6xl mx-auto">
 
 
-      {/* Hero Section */}
-      <Hero />
+        <h2 className="text-4xl font-bold text-center">
+          Our Services
+        </h2>
 
 
-      {/* Trust Section */}
-      <TrustBar />
+        <p className="text-center text-gray-600 mt-3">
+          We provide academic assistance across multiple subjects.
+        </p>
 
 
-      {/* Statistics */}
-      <Statistics />
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
 
 
-      {/* Services */}
-      <Services />
+          {services.map((service) => (
+
+            <div
+              key={service.title}
+              className="bg-white border rounded-xl shadow-md p-8 hover:shadow-xl transition"
+            >
 
 
-      {/* Subjects */}
-      <Subjects />
+              <div className="text-4xl">
+                {service.icon}
+              </div>
 
 
-      {/* How It Works */}
-      <HowItWorks />
+              <h3 className="text-xl font-bold text-blue-700 mt-4">
+                {service.title}
+              </h3>
 
 
-      {/* Why Choose Us */}
-      <WhyChooseUs />
+              <p className="text-gray-600 mt-3">
+                {service.description}
+              </p>
 
 
-      {/* Testimonials */}
-      <Testimonials />
+
+              <Link
+                href={service.link}
+                className="inline-block mt-6 text-blue-700 font-semibold hover:underline"
+              >
+                Learn More →
+              </Link>
 
 
-      {/* FAQ */}
-      <FAQ />
+            </div>
+
+          ))}
 
 
-      {/* Call To Action */}
-      <CTA />
+        </div>
 
 
-    </main>
+      </div>
+
+
+    </section>
+
   );
 }
