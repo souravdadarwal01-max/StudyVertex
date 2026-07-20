@@ -4,6 +4,47 @@ export const metadata = {
     "Get online homework help from StudyVertex experts. We help students with homework, assignments, projects, and academic tasks across different subjects.",
 };
 
+
+// Service Schema
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+
+  "name": "Homework Help Service",
+
+  "serviceType": "Academic Homework Help",
+
+  "provider": {
+    "@type": "Organization",
+    "name": "StudyVertex",
+    "url": "https://studyvertex.in"
+  },
+
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "United States"
+    },
+    {
+      "@type": "Country",
+      "name": "United Kingdom"
+    },
+    {
+      "@type": "Country",
+      "name": "Australia"
+    },
+    {
+      "@type": "Country",
+      "name": "Canada"
+    }
+  ],
+
+  "description":
+    "StudyVertex provides professional homework help services for students including homework solutions, academic guidance, subject explanations, and project assistance."
+};
+
+
+
 export default function HomeworkHelp() {
   return (
     <main className="max-w-5xl mx-auto px-6 py-10">
@@ -120,6 +161,17 @@ export default function HomeworkHelp() {
         today for professional homework assistance designed for your academic
         needs.
       </p>
+
+
+
+      {/* Service Schema */}
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(serviceSchema),
+        }}
+      />
 
 
     </main>
