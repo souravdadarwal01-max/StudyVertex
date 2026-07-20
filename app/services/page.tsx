@@ -57,16 +57,22 @@ export default function ServicesPage() {
             <Link
               key={service.slug}
               href={`/services/${service.slug}`}
-              className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition"
+              className="block bg-white rounded-xl shadow-md p-6 hover:shadow-xl hover:-translate-y-1 transition cursor-pointer"
             >
 
               <h2 className="font-bold text-lg text-blue-600">
                 {service.name}
               </h2>
 
+
               <p className="mt-3 text-gray-600">
-                Get expert help from qualified tutors.
+                Get professional academic support from expert tutors.
               </p>
+
+
+              <span className="inline-block mt-4 text-blue-700 font-semibold">
+                Learn More →
+              </span>
 
 
             </Link>
@@ -78,6 +84,7 @@ export default function ServicesPage() {
 
 
       </div>
+
 
     </main>
   );
