@@ -4,6 +4,47 @@ export const metadata = {
     "StudyVertex provides professional essay writing services for students worldwide. Get expert help with academic essays, research essays, and university writing tasks.",
 };
 
+
+// Service Schema
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+
+  "name": "Essay Writing Service",
+
+  "serviceType": "Academic Essay Writing Service",
+
+  "provider": {
+    "@type": "Organization",
+    "name": "StudyVertex",
+    "url": "https://studyvertex.in"
+  },
+
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "United States"
+    },
+    {
+      "@type": "Country",
+      "name": "United Kingdom"
+    },
+    {
+      "@type": "Country",
+      "name": "Australia"
+    },
+    {
+      "@type": "Country",
+      "name": "Canada"
+    }
+  ],
+
+  "description":
+    "StudyVertex provides professional essay writing services for students including academic essays, research essays, analytical writing, argumentative essays, reports, and university writing tasks."
+};
+
+
+
 export default function EssayWritingService() {
   return (
     <main className="max-w-5xl mx-auto px-6 py-10">
@@ -129,6 +170,17 @@ export default function EssayWritingService() {
         Share your requirements with our team and get professional assistance
         for your essay writing needs.
       </p>
+
+
+
+      {/* Service Schema */}
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(serviceSchema),
+        }}
+      />
 
 
     </main>
