@@ -1,3 +1,4 @@
+import Link from "next/link";
 export const metadata = {
   title: "Engineering Assignment Help Online | Expert Engineering Homework Support - StudyVertex",
   description:
@@ -129,6 +130,98 @@ export default function EngineeringAssignmentHelp() {
       </p>
 
 
+   <section className="mt-12">
+
+  <h2 className="text-3xl font-bold mb-6">
+    Related Assignment Help Services
+  </h2>
+
+
+  <div className="grid md:grid-cols-2 gap-4">
+
+
+    <Link
+      href="/assignment-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      General Assignment Help
+    </Link>
+
+
+    <Link
+      href="/computer-science-assignment-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Computer Science Assignment Help
+    </Link>
+
+
+    <Link
+      href="/mba-assignment-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      MBA Assignment Help
+    </Link>
+
+
+    <Link
+      href="/research-paper-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Research Paper Help
+    </Link>
+
+
+  </div>
+
+</section>
+
+
+<section className="mt-12">
+
+  <h2 className="text-3xl font-bold mb-6">
+    Assignment Help For Students Worldwide
+  </h2>
+
+
+  <div className="grid md:grid-cols-2 gap-4">
+
+
+    <Link
+      href="/usa-assignment-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Engineering Assignment Help USA
+    </Link>
+
+
+    <Link
+      href="/uk-assignment-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Engineering Assignment Help UK
+    </Link>
+
+
+    <Link
+      href="/australia-assignment-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Engineering Assignment Help Australia
+    </Link>
+
+
+    <Link
+      href="/canada-assignment-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Engineering Assignment Help Canada
+    </Link>
+
+
+  </div>
+
+</section>
     </main>
   );
 }
