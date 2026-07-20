@@ -94,64 +94,80 @@ export default function Navbar() {
 
 
 
-
           {/* Subjects Multi Dropdown */}
 
- <div
-  className="relative"
-  onMouseEnter={() => setSubjectsOpen(true)}
-  onMouseLeave={() => setSubjectsOpen(false)}
->
-  <button className="hover:text-blue-700">
-    Subjects ▾
-  </button>
-
-  {subjectsOpen && (
-    <div className="absolute top-8 left-0 bg-white shadow-xl rounded-xl w-80 p-3">
-
-      {Object.entries(subjects).map(([slug, category]) => (
-
-        <div
-          key={slug}
-          className="group relative"
-        >
-
-          <Link
-            href={`/subjects/${slug}`}
-            className="flex justify-between items-center px-4 py-3 rounded-lg hover:bg-gray-100 font-medium"
+          <div
+            className="relative"
+            onMouseEnter={() => setSubjectsOpen(true)}
+            onMouseLeave={() => setSubjectsOpen(false)}
           >
-            <span>
-              {category.icon} {category.title}
-            </span>
 
-            <span>›</span>
-          </Link>
+            <button className="hover:text-blue-700">
+              Subjects ▾
+            </button>
 
-          <div className="hidden group-hover:block absolute left-full top-0 bg-white shadow-xl rounded-xl w-72 p-4">
 
-            {category.subjects.map((subject) => (
+            {subjectsOpen && (
 
-              <Link
-                key={subject}
-                href={`/subjects/${slug}`}
-                className="block px-3 py-2 rounded hover:bg-blue-50 hover:text-blue-700"
-              >
-                {subject}
-              </Link>
+              <div className="absolute top-8 left-0 bg-white shadow-xl rounded-xl w-80 p-3">
 
-            ))}
+
+                {Object.entries(subjects).map(([slug, category]) => (
+
+                  <div
+                    key={slug}
+                    className="group relative"
+                  >
+
+                    <Link
+                      href={`/subjects/${slug}`}
+                      className="flex justify-between items-center px-4 py-3 rounded-lg hover:bg-gray-100 font-medium"
+                    >
+
+                      <span>
+                        {category.icon} {category.title}
+                      </span>
+
+                      <span>›</span>
+
+                    </Link>
+
+
+
+                    <div className="hidden group-hover:block absolute left-full top-0 bg-white shadow-xl rounded-xl w-72 p-4">
+
+
+                      {category.subjects.map((subject) => (
+
+                        <Link
+                          key={subject}
+                          href={`/subjects/${slug}`}
+                          className="block px-3 py-2 rounded hover:bg-blue-50 hover:text-blue-700"
+                        >
+                          {subject}
+                        </Link>
+
+                      ))}
+
+
+                    </div>
+
+
+                  </div>
+
+                ))}
+
+
+              </div>
+
+            )}
 
           </div>
 
-        </div>
 
-      ))}
 
-    </div>
-  )}
 
-</div>
-          
+
           {/* Blogs */}
 
           <Link href="/blogs" className="hover:text-blue-700">
@@ -172,31 +188,7 @@ export default function Navbar() {
 
 
 
-          {/* Dashboard */}
-
-          <Link href="/dashboard" className="hover:text-blue-700">
-            Dashboard
-          </Link>
-
-
-
-
-
-          {/* Login */}
-
-          <Link
-            href="/login"
-            className="bg-gray-100 px-5 py-2 rounded-lg"
-          >
-            Login
-          </Link>
-
-
-
-
-
-
-          {/* Submit */}
+          {/* Submit Assignment CTA */}
 
           <Link
             href="/submit-assignment"
