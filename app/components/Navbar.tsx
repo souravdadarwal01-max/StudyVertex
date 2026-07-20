@@ -8,7 +8,9 @@ export default function Navbar() {
   const [servicesOpen, setServicesOpen] = useState(false);
   const [subjectsOpen, setSubjectsOpen] = useState(false);
 
+
   return (
+
     <nav className="bg-white shadow-md px-6 py-4 sticky top-0 z-50">
 
       <div className="max-w-7xl mx-auto flex justify-between items-center">
@@ -24,12 +26,11 @@ export default function Navbar() {
 
 
 
-        {/* Menu */}
         <div className="flex gap-6 items-center">
 
 
           {/* Home */}
-          <Link 
+          <Link
             href="/"
             className="hover:text-blue-700"
           >
@@ -51,42 +52,45 @@ export default function Navbar() {
 
 
             {servicesOpen && (
-              <div className="absolute top-8 left-0 bg-white shadow-lg rounded-lg w-56 p-3">
 
+              <div
+                className="absolute top-8 left-0 bg-white shadow-lg rounded-lg w-64 p-3"
+              >
 
                 <Link
-                  href="/services/assignment-help"
+                  href="/services/programming-assignment-help"
                   className="block px-3 py-2 hover:bg-gray-100 rounded"
                 >
-                  Assignment Help
+                  Programming Assignment Help
                 </Link>
 
 
                 <Link
-                  href="/services/homework-help"
+                  href="/services/engineering-assignment-help"
                   className="block px-3 py-2 hover:bg-gray-100 rounded"
                 >
-                  Homework Help
+                  Engineering Assignment Help
                 </Link>
 
 
                 <Link
-                  href="/services/online-tutors"
+                  href="/services/mba-assignment-help"
                   className="block px-3 py-2 hover:bg-gray-100 rounded"
                 >
-                  Online Tutors
+                  MBA Assignment Help
                 </Link>
 
 
                 <Link
-                  href="/services/project-help"
+                  href="/services/nursing-assignment-help"
                   className="block px-3 py-2 hover:bg-gray-100 rounded"
                 >
-                  Project Help
+                  Nursing Assignment Help
                 </Link>
 
 
               </div>
+
             )}
 
           </div>
@@ -96,20 +100,25 @@ export default function Navbar() {
 
 
           {/* Subjects Dropdown */}
+
           <div
             className="relative"
             onMouseEnter={() => setSubjectsOpen(true)}
             onMouseLeave={() => setSubjectsOpen(false)}
           >
 
+
             <button className="hover:text-blue-700">
               Subjects ▾
             </button>
 
 
+
             {subjectsOpen && (
 
-              <div className="absolute top-8 left-0 bg-white shadow-lg rounded-lg w-56 p-3">
+              <div
+                className="absolute top-8 left-0 bg-white shadow-lg rounded-lg w-56 p-3"
+              >
 
 
                 <Link
@@ -161,7 +170,9 @@ export default function Navbar() {
 
 
 
+
           {/* Blogs */}
+
           <Link
             href="/blogs"
             className="hover:text-blue-700"
@@ -173,6 +184,7 @@ export default function Navbar() {
 
 
           {/* Contact */}
+
           <Link
             href="/contact"
             className="hover:text-blue-700"
@@ -185,6 +197,7 @@ export default function Navbar() {
 
 
           {/* Dashboard */}
+
           <Link
             href="/dashboard"
             className="hover:text-blue-700"
@@ -195,8 +208,8 @@ export default function Navbar() {
 
 
 
-
           {/* Login */}
+
           <Link
             href="/login"
             className="bg-gray-100 px-5 py-2 rounded-lg hover:bg-gray-200"
@@ -208,12 +221,14 @@ export default function Navbar() {
 
 
           {/* Submit Assignment */}
+
           <Link
             href="/submit-assignment"
             className="bg-blue-700 text-white px-5 py-2 rounded-lg hover:bg-blue-800"
           >
             Submit Assignment
           </Link>
+
 
 
         </div>
@@ -223,5 +238,6 @@ export default function Navbar() {
 
 
     </nav>
+
   );
 }
