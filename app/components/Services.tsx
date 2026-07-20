@@ -1,85 +1,121 @@
-import Link from "next/link";
-
 export default function Services() {
 
   const services = [
     {
-      icon: "💻",
-      title: "Programming Assignment Help",
+      title: "Assignment Help",
       description:
-        "Python, Java, C++, JavaScript and other programming languages.",
-      link: "/services/programming-assignment-help",
-    },
-
-    {
-      icon: "⚙️",
-      title: "Engineering Assignment Help",
-      description:
-        "Mechanical, Civil, Electrical and Electronics assignments.",
-      link: "/services/engineering-assignment-help",
-    },
-
-    {
-      icon: "📈",
-      title: "MBA Assignment Help",
-      description:
-        "Marketing, HR, Finance and Operations projects.",
-      link: "/services/mba-assignment-help",
-    },
-
-    {
-      icon: "🏥",
-      title: "Nursing Assignment Help",
-      description:
-        "Professional nursing and healthcare academic support.",
-      link: "/services/nursing-assignment-help",
-    },
-
-    {
-      icon: "📊",
-      title: "Statistics Help",
-      description:
-        "SPSS, R, Excel and Data Analysis support.",
-      link: "/services/statistics-help",
-    },
-
-    {
+        "Get expert support for university assignments, coursework and academic projects.",
+      link: "/services/assignment-help",
       icon: "📚",
+    },
+
+    {
       title: "Essay Writing Help",
       description:
-        "High-quality essays with proper citations and formatting.",
-      link: "/services/essay-writing",
+        "Professional essay writing support with proper structure, research and citations.",
+      link: "/services/essay-writing-help",
+      icon: "✍️",
     },
+
+    {
+      title: "Homework Help",
+      description:
+        "Get personalized homework assistance from experienced academic experts.",
+      link: "/services/homework-help",
+      icon: "📝",
+    },
+
+    {
+      title: "Live Tutor Sessions",
+      description:
+        "One-to-one online tutoring sessions for better understanding of concepts.",
+      link: "/services/live-tutor-session",
+      icon: "👨‍🏫",
+    },
+
+    {
+      title: "Lab Report Help",
+      description:
+        "Complete assistance for science and engineering laboratory reports.",
+      link: "/services/lab-report-help",
+      icon: "🔬",
+    },
+
+    {
+      title: "Project Report Help",
+      description:
+        "Support for academic projects, documentation and final year reports.",
+      link: "/services/project-report-help",
+      icon: "📊",
+    },
+
+
+    {
+      title: "Presentation Help",
+      description:
+        "Create professional academic and business presentations.",
+      link: "/services/presentation-help",
+      icon: "🎯",
+    },
+
+
+    {
+      title: "Research Paper Help",
+      description:
+        "Research assistance, literature reviews and academic formatting.",
+      link: "/services/research-paper-help",
+      icon: "🔎",
+    },
+
+
+    {
+      title: "Dissertation Help",
+      description:
+        "Expert guidance for dissertation planning, writing and formatting.",
+      link: "/services/dissertation-help",
+      icon: "🎓",
+    },
+
+
+    {
+      title: "Programming Help",
+      description:
+        "Coding assistance for Python, Java, C++, JavaScript and more.",
+      link: "/services/programming-help",
+      icon: "💻",
+    },
+
   ];
 
 
   return (
 
-    <section className="py-16 px-6 bg-white">
+    <section className="py-16 px-6">
 
 
       <div className="max-w-6xl mx-auto">
 
 
-        <h2 className="text-4xl font-bold text-center text-blue-700">
-           Our Services Updated
-          </h2>
+        <h2 className="text-4xl font-bold text-center">
+          Our Services
+        </h2>
 
 
-        <p className="text-center text-gray-600 mt-4">
-          We provide academic assistance across multiple subjects.
+        <p className="text-center text-gray-600 mt-3">
+          Professional academic assistance for students worldwide.
         </p>
 
 
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+        <div className="grid md:grid-cols-3 gap-8 mt-10">
 
 
-          {services.map((service) => (
-
-            <div
+          {services.map((service)=>(
+            
+            <a
               key={service.title}
-              className="bg-white border rounded-xl shadow-md p-8 hover:shadow-xl transition"
+              href={service.link}
+              className="bg-white border rounded-xl p-6 shadow hover:shadow-xl transition"
             >
 
 
@@ -88,7 +124,7 @@ export default function Services() {
               </div>
 
 
-              <h3 className="text-xl font-bold text-blue-700 mt-5">
+              <h3 className="text-xl font-bold text-blue-700 mt-4">
                 {service.title}
               </h3>
 
@@ -98,15 +134,12 @@ export default function Services() {
               </p>
 
 
-              <Link
-                href={service.link}
-                className="inline-block mt-6 text-blue-700 font-semibold hover:underline"
-              >
+              <span className="inline-block mt-5 text-blue-700 font-semibold">
                 Learn More →
-              </Link>
+              </span>
 
 
-            </div>
+            </a>
 
           ))}
 
