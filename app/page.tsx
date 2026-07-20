@@ -1,82 +1,88 @@
-"use client";
-
-import { useState } from "react";
-import { useRouter } from "next/navigation";
-import { supabase } from "@/lib/supabase";
-
-export default function LoginPage() {
-  const router = useRouter();
-
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  const [loading, setLoading] = useState(false);
-
-  async function handleLogin(e: React.FormEvent) {
-    e.preventDefault();
-
-    setLoading(true);
-
-    const { error } = await supabase.auth.signInWithPassword({
-      email,
-      password,
-    });
-
-    setLoading(false);
-
-    if (error) {
-      alert(error.message);
-      return;
-    }
-
-    alert("Login Successful!");
-
-    router.push("/dashboard");
-  }
-
+export default function Home() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-gray-100 p-6">
-      <div className="bg-white rounded-xl shadow-xl p-8 w-full max-w-md">
+    <main className="min-h-screen bg-white">
 
-        <h1 className="text-3xl font-bold text-center text-indigo-600">
-          Student Login
+      {/* Hero Section */}
+      <section className="bg-indigo-600 text-white py-20 px-6 text-center">
+
+        <h1 className="text-5xl font-bold">
+          Expert Assignment Help for Students Worldwide
         </h1>
 
-        <p className="text-center text-gray-600 mt-2">
-          Welcome back to StudyVertex
+        <p className="mt-6 text-xl">
+          Get personalized academic support from expert tutors.
+          One-to-one guidance for assignments, projects and homework.
         </p>
 
-        <form onSubmit={handleLogin} className="space-y-5 mt-8">
+        <a
+          href="/submit-assignment"
+          className="inline-block mt-8 bg-white text-indigo-600 px-8 py-4 rounded-lg font-bold"
+        >
+          Submit Your Assignment
+        </a>
 
-          <input
-            type="email"
-            placeholder="Email Address"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-            className="w-full border rounded-lg px-4 py-3"
-          />
+      </section>
 
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-            className="w-full border rounded-lg px-4 py-3"
-          />
 
-          <button
-            type="submit"
-            disabled={loading}
-            className="w-full bg-emerald-600 text-white py-3 rounded-lg hover:bg-emerald-700"
-          >
-            {loading ? "Logging In..." : "Login"}
-          </button>
+      {/* Services */}
+      <section className="py-16 px-6">
 
-        </form>
+        <h2 className="text-3xl font-bold text-center">
+          Our Services
+        </h2>
 
-      </div>
+        <div className="grid md:grid-cols-3 gap-6 mt-10">
+
+          <div className="p-6 shadow rounded-xl">
+            <h3 className="text-xl font-bold">
+              Assignment Help
+            </h3>
+            <p>
+              Professional guidance for university assignments.
+            </p>
+          </div>
+
+
+          <div className="p-6 shadow rounded-xl">
+            <h3 className="text-xl font-bold">
+              Homework Help
+            </h3>
+            <p>
+              Get support from subject experts.
+            </p>
+          </div>
+
+
+          <div className="p-6 shadow rounded-xl">
+            <h3 className="text-xl font-bold">
+              Online Tutors
+            </h3>
+            <p>
+              Connect with experienced tutors.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* CTA */}
+      <section className="bg-gray-100 py-16 text-center">
+
+        <h2 className="text-3xl font-bold">
+          Need Help With Your Assignment?
+        </h2>
+
+        <a
+          href="/submit-assignment"
+          className="inline-block mt-6 bg-emerald-600 text-white px-8 py-3 rounded-lg"
+        >
+          Get Started
+        </a>
+
+      </section>
+
     </main>
   );
 }
