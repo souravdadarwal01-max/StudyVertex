@@ -61,9 +61,9 @@ export default function Services() {
       <div className="max-w-6xl mx-auto">
 
 
-        <h2 className="text-4xl font-bold text-center">
-          Our Services
-        </h2>
+        <h2 className="text-4xl font-bold text-center text-blue-700">
+           Our Services Updated
+          </h2>
 
 
         <p className="text-center text-gray-600 mt-4">
