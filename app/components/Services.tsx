@@ -1,78 +1,123 @@
-const services = [
-  {
-    title: "Programming Assignment Help",
-    icon: "💻",
-    description: "Python, Java, C++, JavaScript and more."
-  },
-  {
-    title: "Engineering Assignments",
-    icon: "⚙️",
-    description: "Mechanical, Civil, Electrical and Electronics."
-  },
-  {
-    title: "MBA Projects",
-    icon: "📈",
-    description: "Marketing, HR, Finance and Operations."
-  },
-  {
-    title: "Nursing Assignments",
-    icon: "🏥",
-    description: "Professional nursing and healthcare writing."
-  },
-  {
-    title: "Statistics Help",
-    icon: "📊",
-    description: "SPSS, R, Excel and Data Analysis."
-  },
-  {
-    title: "Essay Writing",
-    icon: "📚",
-    description: "High-quality essays with proper citations."
-  }
-];
+import Link from "next/link";
 
 export default function Services() {
+
+  const services = [
+    {
+      icon: "💻",
+      title: "Programming Assignment Help",
+      description:
+        "Python, Java, C++, JavaScript and other programming languages.",
+      link: "/services/programming-assignment-help",
+    },
+
+    {
+      icon: "⚙️",
+      title: "Engineering Assignment Help",
+      description:
+        "Mechanical, Civil, Electrical and Electronics assignments.",
+      link: "/services/engineering-assignment-help",
+    },
+
+    {
+      icon: "📈",
+      title: "MBA Assignment Help",
+      description:
+        "Marketing, HR, Finance and Operations projects.",
+      link: "/services/mba-assignment-help",
+    },
+
+    {
+      icon: "🏥",
+      title: "Nursing Assignment Help",
+      description:
+        "Professional nursing and healthcare academic support.",
+      link: "/services/nursing-assignment-help",
+    },
+
+    {
+      icon: "📊",
+      title: "Statistics Help",
+      description:
+        "SPSS, R, Excel and Data Analysis support.",
+      link: "/services/statistics-help",
+    },
+
+    {
+      icon: "📚",
+      title: "Essay Writing Help",
+      description:
+        "High-quality essays with proper citations and formatting.",
+      link: "/services/essay-writing",
+    },
+  ];
+
+
   return (
-    <section className="bg-slate-50 py-20">
-      <div className="max-w-7xl mx-auto px-8">
+
+    <section className="py-16 px-6 bg-white">
+
+
+      <div className="max-w-6xl mx-auto">
+
 
         <h2 className="text-4xl font-bold text-center">
           Our Services
         </h2>
 
-        <p className="text-center text-gray-600 mt-4 mb-14">
+
+        <p className="text-center text-gray-600 mt-4">
           We provide academic assistance across multiple subjects.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-8">
 
-          {services.map((service, index) => (
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+
+
+          {services.map((service) => (
+
             <div
-              key={index}
-              className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition duration-300 hover:-translate-y-2"
+              key={service.title}
+              className="bg-white border rounded-xl shadow-md p-8 hover:shadow-xl transition"
             >
-              <div className="text-5xl">
+
+
+              <div className="text-4xl">
                 {service.icon}
               </div>
 
-              <h3 className="text-2xl font-bold mt-6">
+
+              <h3 className="text-xl font-bold text-blue-700 mt-5">
                 {service.title}
               </h3>
 
-              <p className="mt-4 text-gray-600">
+
+              <p className="text-gray-600 mt-3">
                 {service.description}
               </p>
 
-              <button className="mt-8 text-blue-600 font-semibold">
+
+              <Link
+                href={service.link}
+                className="inline-block mt-6 text-blue-700 font-semibold hover:underline"
+              >
                 Learn More →
-              </button>
+              </Link>
+
 
             </div>
+
           ))}
+
 
         </div>
 
+
       </div>
+
+
     </section>
+
   );
 }
