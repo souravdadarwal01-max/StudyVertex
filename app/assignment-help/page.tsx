@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Breadcrumb from "../components/Breadcrumb";
 
 
 export const metadata = {
@@ -53,9 +54,27 @@ export default function AssignmentHelp() {
   return (
     <main className="max-w-5xl mx-auto px-6 py-10">
 
+
+      {/* Breadcrumb */}
+
+      <Breadcrumb
+        items={[
+          {
+            name: "Services",
+            url: "/services"
+          },
+          {
+            name: "Assignment Help"
+          }
+        ]}
+      />
+
+
+
       <h1 className="text-4xl font-bold mb-6">
         Online Assignment Help Service for Students Worldwide
       </h1>
+
 
       <p className="mb-5">
         StudyVertex provides reliable online assignment help services for
@@ -66,6 +85,7 @@ export default function AssignmentHelp() {
         Our platform helps students get professional guidance and support for
         different types of assignments.
       </p>
+
 
       <p className="mb-5">
         Whether you are studying engineering, management, computer science,
@@ -79,6 +99,7 @@ export default function AssignmentHelp() {
       <h2 className="text-2xl font-bold mt-8 mb-4">
         Why Choose StudyVertex Assignment Help?
       </h2>
+
 
       <p className="mb-5">
         Students choose StudyVertex because we focus on quality, originality,
@@ -103,6 +124,7 @@ export default function AssignmentHelp() {
         Assignment Help For Different Subjects
       </h2>
 
+
       <p className="mb-5">
         StudyVertex offers assignment assistance for various academic fields.
         Engineering students can get help with technical reports, case studies,
@@ -125,6 +147,7 @@ export default function AssignmentHelp() {
         Get Professional Assignment Help Today
       </h2>
 
+
       <p>
         Managing academic workload can be challenging, especially when students
         have exams, projects, and personal commitments. StudyVertex provides a
@@ -135,11 +158,8 @@ export default function AssignmentHelp() {
 
 
 
-      {/* Your existing Link sections remain unchanged here */}
-
-
-
       {/* Service Schema */}
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
