@@ -17,12 +17,14 @@ export default function Navbar() {
 
 
         {/* Logo */}
+
         <Link
           href="/"
           className="text-2xl font-bold text-blue-700"
         >
           StudyVertex
         </Link>
+
 
 
 
@@ -43,6 +45,7 @@ export default function Navbar() {
 
 
 
+
           {/* Services Dropdown */}
 
           <div
@@ -56,56 +59,69 @@ export default function Navbar() {
             </button>
 
 
+
             {servicesOpen && (
 
-              <div className="absolute top-8 left-0 bg-white shadow-lg rounded-lg w-64 p-3">
+              <div className="absolute top-8 left-0 bg-white shadow-lg rounded-lg w-72 p-3">
 
 
-                <Link
-                  href="/services/programming-assignment-help"
-                  className="block px-3 py-2 hover:bg-gray-100 rounded"
-                >
-                  Programming Assignment Help
+                <Link href="/services/assignment-help"
+                  className="block px-3 py-2 hover:bg-gray-100 rounded">
+                  📚 Assignment Help
                 </Link>
 
 
-                <Link
-                  href="/services/engineering-assignment-help"
-                  className="block px-3 py-2 hover:bg-gray-100 rounded"
-                >
-                  Engineering Assignment Help
+                <Link href="/services/essay-writing-help"
+                  className="block px-3 py-2 hover:bg-gray-100 rounded">
+                  ✍️ Essay Writing Help
                 </Link>
 
 
-                <Link
-                  href="/services/mba-assignment-help"
-                  className="block px-3 py-2 hover:bg-gray-100 rounded"
-                >
-                  MBA Assignment Help
+                <Link href="/services/homework-help"
+                  className="block px-3 py-2 hover:bg-gray-100 rounded">
+                  📝 Homework Help
                 </Link>
 
 
-                <Link
-                  href="/services/nursing-assignment-help"
-                  className="block px-3 py-2 hover:bg-gray-100 rounded"
-                >
-                  Nursing Assignment Help
+                <Link href="/services/live-tutor-session"
+                  className="block px-3 py-2 hover:bg-gray-100 rounded">
+                  👨‍🏫 Live Tutor Sessions
                 </Link>
 
 
-                <Link
-                  href="/services/statistics-help"
-                  className="block px-3 py-2 hover:bg-gray-100 rounded"
-                >
-                  Statistics Help
+                <Link href="/services/lab-report-help"
+                  className="block px-3 py-2 hover:bg-gray-100 rounded">
+                  🔬 Lab Report Help
                 </Link>
 
 
-                <Link
-                  href="/services/essay-writing"
-                  className="block px-3 py-2 hover:bg-gray-100 rounded"
-                >
-                  Essay Writing
+                <Link href="/services/project-report-help"
+                  className="block px-3 py-2 hover:bg-gray-100 rounded">
+                  📊 Project Report Help
+                </Link>
+
+
+                <Link href="/services/presentation-help"
+                  className="block px-3 py-2 hover:bg-gray-100 rounded">
+                  🎯 Presentation Help
+                </Link>
+
+
+                <Link href="/services/research-paper-help"
+                  className="block px-3 py-2 hover:bg-gray-100 rounded">
+                  🔎 Research Paper Help
+                </Link>
+
+
+                <Link href="/services/dissertation-help"
+                  className="block px-3 py-2 hover:bg-gray-100 rounded">
+                  🎓 Dissertation Help
+                </Link>
+
+
+                <Link href="/services/programming-help"
+                  className="block px-3 py-2 hover:bg-gray-100 rounded">
+                  💻 Programming Help
                 </Link>
 
 
@@ -120,7 +136,9 @@ export default function Navbar() {
 
 
 
+
           {/* Subjects Dropdown */}
+
 
           <div
             className="relative"
@@ -140,85 +158,58 @@ export default function Navbar() {
               <div className="absolute top-8 left-0 bg-white shadow-lg rounded-lg w-72 p-3">
 
 
-                <Link
-                  href="/subjects/computer-science-it"
-                  className="block px-3 py-2 hover:bg-gray-100 rounded"
-                >
-                  Computer Science & IT
+                <Link href="/subjects/computer-science-it"
+                  className="block px-3 py-2 hover:bg-gray-100 rounded">
+                  💻 Computer Science & IT
                 </Link>
 
 
-
-                <Link
-                  href="/subjects/engineering"
-                  className="block px-3 py-2 hover:bg-gray-100 rounded"
-                >
-                  Engineering
+                <Link href="/subjects/engineering"
+                  className="block px-3 py-2 hover:bg-gray-100 rounded">
+                  ⚙️ Engineering
                 </Link>
 
 
-
-                <Link
-                  href="/subjects/mathematics"
-                  className="block px-3 py-2 hover:bg-gray-100 rounded"
-                >
-                  Mathematics
+                <Link href="/subjects/mathematics"
+                  className="block px-3 py-2 hover:bg-gray-100 rounded">
+                  📐 Mathematics
                 </Link>
 
 
-
-                <Link
-                  href="/subjects/business-management"
-                  className="block px-3 py-2 hover:bg-gray-100 rounded"
-                >
-                  Business & Management
+                <Link href="/subjects/business-management"
+                  className="block px-3 py-2 hover:bg-gray-100 rounded">
+                  📈 Business & Management
                 </Link>
 
 
-
-                <Link
-                  href="/subjects/science"
-                  className="block px-3 py-2 hover:bg-gray-100 rounded"
-                >
-                  Science
+                <Link href="/subjects/science"
+                  className="block px-3 py-2 hover:bg-gray-100 rounded">
+                  🔬 Science
                 </Link>
 
 
-
-                <Link
-                  href="/subjects/healthcare-nursing"
-                  className="block px-3 py-2 hover:bg-gray-100 rounded"
-                >
-                  Healthcare & Nursing
+                <Link href="/subjects/healthcare-nursing"
+                  className="block px-3 py-2 hover:bg-gray-100 rounded">
+                  🏥 Healthcare & Nursing
                 </Link>
 
 
-
-                <Link
-                  href="/subjects/arts-humanities"
-                  className="block px-3 py-2 hover:bg-gray-100 rounded"
-                >
-                  Arts & Humanities
+                <Link href="/subjects/arts-humanities"
+                  className="block px-3 py-2 hover:bg-gray-100 rounded">
+                  🎨 Arts & Humanities
                 </Link>
 
 
-
-                <Link
-                  href="/subjects/finance-accounting"
-                  className="block px-3 py-2 hover:bg-gray-100 rounded"
-                >
-                  Finance & Accounting
+                <Link href="/subjects/finance-accounting"
+                  className="block px-3 py-2 hover:bg-gray-100 rounded">
+                  💰 Finance & Accounting
                 </Link>
 
 
-
-                <Link
-                  href="/subjects/research-writing"
-                  className="block px-3 py-2 hover:bg-gray-100 rounded"
-                >
-                  Research & Writing
+                <Link href="/subjects/research-writing"
+                  className="block px-3 py-2 hover:bg-gray-100 rounded">
+                  📚 Research & Writing
                 </Link>
-
 
 
               </div>
@@ -245,6 +236,7 @@ export default function Navbar() {
 
 
 
+
           {/* Contact */}
 
           <Link
@@ -253,6 +245,7 @@ export default function Navbar() {
           >
             Contact Us
           </Link>
+
 
 
 
@@ -271,6 +264,8 @@ export default function Navbar() {
 
 
 
+
+
           {/* Login */}
 
           <Link
@@ -279,6 +274,7 @@ export default function Navbar() {
           >
             Login
           </Link>
+
 
 
 
@@ -304,4 +300,5 @@ export default function Navbar() {
     </nav>
 
   );
+
 }
