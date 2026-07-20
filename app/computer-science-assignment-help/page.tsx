@@ -1,3 +1,4 @@
+import Link from "next/link";
 export const metadata = {
   title: "Computer Science Assignment Help Online | Programming & CS Expert Support - StudyVertex",
   description:
@@ -130,6 +131,98 @@ export default function ComputerScienceAssignmentHelp() {
       </p>
 
 
+   <section className="mt-12">
+
+  <h2 className="text-3xl font-bold mb-6">
+    Related Academic Services
+  </h2>
+
+
+  <div className="grid md:grid-cols-2 gap-4">
+
+
+    <Link
+      href="/assignment-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      General Assignment Help
+    </Link>
+
+
+    <Link
+      href="/engineering-assignment-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Engineering Assignment Help
+    </Link>
+
+
+    <Link
+      href="/research-paper-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Research Paper Help
+    </Link>
+
+
+    <Link
+      href="/essay-writing-service"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Essay Writing Service
+    </Link>
+
+
+  </div>
+
+</section>
+
+
+<section className="mt-12">
+
+  <h2 className="text-3xl font-bold mb-6">
+    Computer Science Assignment Help Worldwide
+  </h2>
+
+
+  <div className="grid md:grid-cols-2 gap-4">
+
+
+    <Link
+      href="/usa-assignment-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Computer Science Assignment Help USA
+    </Link>
+
+
+    <Link
+      href="/uk-assignment-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Computer Science Assignment Help UK
+    </Link>
+
+
+    <Link
+      href="/australia-assignment-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Computer Science Assignment Help Australia
+    </Link>
+
+
+    <Link
+      href="/canada-assignment-help"
+      className="border p-4 rounded-lg hover:shadow-md"
+    >
+      Computer Science Assignment Help Canada
+    </Link>
+
+
+  </div>
+
+</section>
     </main>
   );
 }
