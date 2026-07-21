@@ -8,8 +8,8 @@ export default function ContactPage() {
 
         <div className="bg-white rounded-xl shadow-lg p-8 space-y-4">
           <p><strong>Email:</strong> support@studyvertex.com</p>
-          <p><strong>Phone:</strong> +61 400 000 000</p>
-          <p><strong>WhatsApp:</strong> +61 400 000 000</p>
+          <p><strong>Phone:</strong> +91 97175 75479</p>
+          <p><strong>WhatsApp:</strong> +91 97175 75479</p>
           <p><strong>Working Hours:</strong> 24/7</p>
         </div>
       </div>
