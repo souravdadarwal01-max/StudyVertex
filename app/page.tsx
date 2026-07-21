@@ -9,6 +9,8 @@ import CTA from "./components/CTA";
 import TrustBar from "./components/TrustBar";
 import Statistics from "./components/Statistics";
 import Subjects from "./components/Subjects";
+import Countries from "./components/Countries";
+import SubjectsGrid from "./components/SubjectsGrid";
 
 
 // FAQ Schema for Google SEO
