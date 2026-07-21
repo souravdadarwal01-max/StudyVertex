@@ -178,7 +178,7 @@ export default function PricingPage() {
 
 
           <a
-            href="https://wa.me/919999999999"
+            href="https://wa.me/919717575479"
             target="_blank"
             className="inline-block mt-6 bg-white text-green-600 px-8 py-3 rounded-lg font-semibold"
           >
