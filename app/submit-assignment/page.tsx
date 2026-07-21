@@ -3,56 +3,49 @@
 import { useState } from "react";
 
 export default function SubmitAssignmentPage() {
-
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [details, setDetails] = useState("");
 
-
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
 
-    alert("Assignment submitted successfully!");
+    // Replace with your WhatsApp number (Country Code + Number)
+    const phone = "919717575479";
 
-    console.log({
-      name,
-      email,
-      subject,
-      details,
-    });
+    const message = `🎓 *New Assignment Request*
+
+👤 *Name:* ${name}
+
+📧 *Email:* ${email}
+
+📚 *Subject:* ${subject}
+
+📝 *Assignment Details:*
+${details}`;
+
+    const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(
+      message
+    )}`;
+
+    window.open(whatsappUrl, "_blank");
   }
 
-
   return (
-
     <main className="min-h-screen bg-gray-100 py-16 px-6">
-
-
       <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-8">
-
-
         <h1 className="text-4xl font-bold text-center text-blue-700">
           Submit Your Assignment
         </h1>
-
 
         <p className="text-center text-gray-600 mt-3">
           Get expert academic support from qualified tutors.
         </p>
 
-
-
-        <form
-          onSubmit={handleSubmit}
-          className="space-y-6 mt-10"
-        >
-
-
+        <form onSubmit={handleSubmit} className="space-y-6 mt-10">
           {/* Name */}
-
           <div>
-
             <label className="block font-semibold mb-2">
               Full Name
             </label>
@@ -61,19 +54,14 @@ export default function SubmitAssignmentPage() {
               type="text"
               placeholder="Enter your name"
               value={name}
-              onChange={(e)=>setName(e.target.value)}
+              onChange={(e) => setName(e.target.value)}
               required
               className="w-full border rounded-lg px-4 py-3"
             />
-
           </div>
 
-
-
           {/* Email */}
-
           <div>
-
             <label className="block font-semibold mb-2">
               Email Address
             </label>
@@ -82,141 +70,83 @@ export default function SubmitAssignmentPage() {
               type="email"
               placeholder="Enter your email"
               value={email}
-              onChange={(e)=>setEmail(e.target.value)}
+              onChange={(e) => setEmail(e.target.value)}
               required
               className="w-full border rounded-lg px-4 py-3"
             />
-
           </div>
 
-
-
-          {/* Subject Category */}
-
+          {/* Subject */}
           <div>
-
             <label className="block font-semibold mb-2">
               Select Subject Category
             </label>
 
-
             <select
               value={subject}
-              onChange={(e)=>setSubject(e.target.value)}
+              onChange={(e) => setSubject(e.target.value)}
               required
               className="w-full border rounded-lg px-4 py-3 bg-white"
             >
-
-              <option value="">
-                Choose Subject
-              </option>
-
+              <option value="">Choose Subject</option>
 
               <option value="Computer Science & IT">
                 Computer Science & IT
               </option>
 
+              <option value="Engineering">Engineering</option>
 
-              <option value="Engineering">
-                Engineering
-              </option>
-
-
-              <option value="Mathematics">
-                Mathematics
-              </option>
-
+              <option value="Mathematics">Mathematics</option>
 
               <option value="Business & Management">
                 Business & Management
               </option>
 
-
-              <option value="Science">
-                Science
-              </option>
-
+              <option value="Science">Science</option>
 
               <option value="Healthcare & Nursing">
                 Healthcare & Nursing
               </option>
 
-
               <option value="Arts & Humanities">
                 Arts & Humanities
               </option>
-
 
               <option value="Finance & Accounting">
                 Finance & Accounting
               </option>
 
-
               <option value="Research & Writing">
                 Research & Writing
               </option>
-
-
             </select>
-
           </div>
 
-
-
-
           {/* Assignment Details */}
-
           <div>
-
             <label className="block font-semibold mb-2">
               Assignment Details
             </label>
 
-
             <textarea
-
               placeholder="Describe your assignment requirement"
-
               value={details}
-
-              onChange={(e)=>setDetails(e.target.value)}
-
+              onChange={(e) => setDetails(e.target.value)}
               required
-
               rows={5}
-
               className="w-full border rounded-lg px-4 py-3"
-
             />
-
           </div>
 
-
-
-
           {/* Submit Button */}
-
           <button
-
             type="submit"
-
-            className="w-full bg-blue-700 text-white py-3 rounded-lg font-semibold hover:bg-blue-800"
-
+            className="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition"
           >
-
-            Submit Assignment
-
+            Submit via WhatsApp
           </button>
-
-
-
         </form>
-
-
       </div>
-
-
     </main>
-
   );
 }
