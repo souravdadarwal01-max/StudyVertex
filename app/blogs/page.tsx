@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 export default function BlogsPage() {
-
   const blogs = [
     {
       title: "How to Get Assignment Help Online?",
@@ -10,7 +9,6 @@ export default function BlogsPage() {
       slug: "how-to-get-assignment-help-online",
       category: "Assignment Help",
     },
-
     {
       title: "Best Study Tips for University Students",
       description:
@@ -18,7 +16,6 @@ export default function BlogsPage() {
       slug: "best-study-tips-for-university-students",
       category: "Study Tips",
     },
-
     {
       title: "Benefits of Online Tutors for Students",
       description:
@@ -26,7 +23,6 @@ export default function BlogsPage() {
       slug: "benefits-of-online-tutors",
       category: "Online Learning",
     },
-
     {
       title: "How to Write a Perfect Academic Essay?",
       description:
@@ -34,7 +30,6 @@ export default function BlogsPage() {
       slug: "how-to-write-perfect-academic-essay",
       category: "Essay Writing",
     },
-
     {
       title: "MBA Assignment Writing Guide",
       description:
@@ -42,7 +37,6 @@ export default function BlogsPage() {
       slug: "mba-assignment-writing-guide",
       category: "MBA",
     },
-
     {
       title: "Engineering Students Assignment Guide",
       description:
@@ -52,54 +46,37 @@ export default function BlogsPage() {
     },
   ];
 
-
   return (
     <main className="min-h-screen bg-gray-100 py-20">
-
       <div className="max-w-6xl mx-auto px-6">
-
-
-        {/* Heading */}
 
         <h1 className="text-5xl font-bold text-center text-blue-700">
           StudyVertex Blogs
         </h1>
 
-
         <p className="text-center text-gray-600 mt-4 text-lg">
           Academic guides, study tips and resources for students worldwide.
         </p>
 
-
-
-        {/* Blog Cards */}
-
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
 
-
           {blogs.map((blog) => (
-
             <div
               key={blog.slug}
               className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition"
             >
 
-
               <span className="text-sm text-blue-600 font-semibold">
                 {blog.category}
               </span>
-
 
               <h2 className="text-xl font-bold mt-3">
                 {blog.title}
               </h2>
 
-
               <p className="text-gray-600 mt-4">
                 {blog.description}
               </p>
-
-
 
               <Link
                 href={`/blogs/${blog.slug}`}
@@ -108,18 +85,12 @@ export default function BlogsPage() {
                 Read More →
               </Link>
 
-
             </div>
-
           ))}
-
 
         </div>
 
-
       </div>
-
-
     </main>
   );
 }
