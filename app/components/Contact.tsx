@@ -38,7 +38,7 @@ export default function Contact() {
                 💬 WhatsApp:
                 <br />
                 <span className="font-medium">
-                  +91 XXXXX XXXXX
+                  +91 97175 75479
                 </span>
               </p>
 
