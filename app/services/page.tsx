@@ -1,4 +1,11 @@
 import Link from "next/link";
+import {
+  BookOpen,
+  ClipboardCheck,
+  FileText,
+  GraduationCap,
+  ArrowRight,
+} from "lucide-react";
 
 
 export const metadata = {
@@ -68,129 +75,205 @@ export default function ServicesPage() {
 
 
 
-      <h2 className="text-3xl font-bold mb-6">
-        Our Academic Services
-      </h2>
+     {/* Services */}
 
+<section className="mt-16">
 
+  <div className="text-center mb-12">
 
-      <div className="grid md:grid-cols-2 gap-6">
+    <span className="inline-block rounded-full bg-blue-100 px-4 py-1 text-sm font-semibold text-blue-700">
+      OUR SERVICES
+    </span>
 
+    <h2 className="mt-4 text-4xl font-bold">
+      Our Academic Help Services
+    </h2>
 
-        <Link
-          href="/assignment-help"
-          className="border rounded-lg p-6 hover:shadow-md"
-        >
+    <p className="mx-auto mt-3 max-w-2xl text-gray-600">
+      Explore our complete range of academic assistance designed to help
+      students excel in assignments, homework, essays and research papers.
+    </p>
 
-          <h3 className="text-xl font-bold mb-2">
+  </div>
+
+  <div className="grid gap-8 md:grid-cols-2">
+
+    {/* Assignment */}
+
+    <Link
+      href="/assignment-help"
+      className="group rounded-2xl border border-gray-200 bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl"
+    >
+      <div className="flex items-start gap-5">
+
+        <div className="rounded-full bg-blue-100 p-4">
+          <ClipboardCheck className="h-8 w-8 text-blue-700" />
+        </div>
+
+        <div className="flex-1">
+
+          <h3 className="text-2xl font-bold">
             Assignment Help
           </h3>
 
-          <p className="text-gray-600">
-            Get professional assignment assistance for university projects,
-            reports, case studies, and academic tasks.
+          <p className="mt-2 text-gray-600">
+            Professional support for assignments, reports,
+            case studies and academic projects.
           </p>
 
-        </Link>
+        </div>
 
+        <ArrowRight className="mt-2 h-6 w-6 text-blue-700 transition group-hover:translate-x-1" />
 
+      </div>
+    </Link>
 
+    {/* Homework */}
 
-        <Link
-          href="/homework-help"
-          className="border rounded-lg p-6 hover:shadow-md"
-        >
+    <Link
+      href="/homework-help"
+      className="group rounded-2xl border border-gray-200 bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl"
+    >
+      <div className="flex items-start gap-5">
 
-          <h3 className="text-xl font-bold mb-2">
+        <div className="rounded-full bg-green-100 p-4">
+          <BookOpen className="h-8 w-8 text-green-700" />
+        </div>
+
+        <div className="flex-1">
+
+          <h3 className="text-2xl font-bold">
             Homework Help
           </h3>
 
-          <p className="text-gray-600">
-            Receive expert homework support with explanations and solutions
-            across multiple subjects.
+          <p className="mt-2 text-gray-600">
+            Step-by-step homework guidance across
+            multiple university subjects.
           </p>
 
-        </Link>
+        </div>
 
+        <ArrowRight className="mt-2 h-6 w-6 text-blue-700 transition group-hover:translate-x-1" />
 
+      </div>
+    </Link>
 
+    {/* Essay */}
 
-        <Link
-          href="/essay-writing-service"
-          className="border rounded-lg p-6 hover:shadow-md"
-        >
+    <Link
+      href="/essay-writing-service"
+      className="group rounded-2xl border border-gray-200 bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl"
+    >
+      <div className="flex items-start gap-5">
 
-          <h3 className="text-xl font-bold mb-2">
+        <div className="rounded-full bg-yellow-100 p-4">
+          <FileText className="h-8 w-8 text-yellow-700" />
+        </div>
+
+        <div className="flex-1">
+
+          <h3 className="text-2xl font-bold">
             Essay Writing Service
           </h3>
 
-          <p className="text-gray-600">
-            Get assistance with academic essays, research essays,
-            argumentative writing, and university papers.
+          <p className="mt-2 text-gray-600">
+            Expert assistance with essays,
+            argumentative writing and university papers.
           </p>
 
-        </Link>
+        </div>
 
+        <ArrowRight className="mt-2 h-6 w-6 text-blue-700 transition group-hover:translate-x-1" />
 
+      </div>
+    </Link>
 
+    {/* Research */}
 
-        <Link
-          href="/research-paper-help"
-          className="border rounded-lg p-6 hover:shadow-md"
-        >
+    <Link
+      href="/research-paper-help"
+      className="group rounded-2xl border border-gray-200 bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl"
+    >
+      <div className="flex items-start gap-5">
 
-          <h3 className="text-xl font-bold mb-2">
+        <div className="rounded-full bg-purple-100 p-4">
+          <GraduationCap className="h-8 w-8 text-purple-700" />
+        </div>
+
+        <div className="flex-1">
+
+          <h3 className="text-2xl font-bold">
             Research Paper Help
           </h3>
 
-          <p className="text-gray-600">
-            Professional research assistance for papers, literature reviews,
-            academic reports, and university projects.
+          <p className="mt-2 text-gray-600">
+            Research assistance for dissertations,
+            literature reviews and academic papers.
           </p>
 
-        </Link>
+        </div>
 
+        <ArrowRight className="mt-2 h-6 w-6 text-blue-700 transition group-hover:translate-x-1" />
 
       </div>
+    </Link>
+
+  </div>
+
+</section>
 
 
 
-      <section className="mt-16">
+      {/* Why Choose StudyVertex */}
 
-        <h2 className="text-3xl font-bold mb-5">
-          Why Choose StudyVertex?
-        </h2>
+<section className="mt-20">
 
+  <h2 className="text-3xl font-bold mb-6">
+    Why Choose StudyVertex?
+  </h2>
 
-        <ul className="list-disc ml-6 space-y-2">
+  <div className="grid gap-6 md:grid-cols-2">
 
-          <li>
-            Experienced subject matter experts
-          </li>
+    <div className="rounded-xl border p-6">
+      <h3 className="text-xl font-semibold mb-2">
+        Expert Academic Writers
+      </h3>
+      <p className="text-gray-600">
+        Work with experienced subject experts from various academic disciplines.
+      </p>
+    </div>
 
-          <li>
-            Support for multiple academic disciplines
-          </li>
+    <div className="rounded-xl border p-6">
+      <h3 className="text-xl font-semibold mb-2">
+        Multiple Subjects Covered
+      </h3>
+      <p className="text-gray-600">
+        Get academic assistance across engineering, management, nursing, law,
+        computer science and many more.
+      </p>
+    </div>
 
-          <li>
-            Research-based academic assistance
-          </li>
+    <div className="rounded-xl border p-6">
+      <h3 className="text-xl font-semibold mb-2">
+        Research-Based Support
+      </h3>
+      <p className="text-gray-600">
+        Every solution is prepared with proper research and academic standards.
+      </p>
+    </div>
 
-          <li>
-            Help according to university requirements
-          </li>
+    <div className="rounded-xl border p-6">
+      <h3 className="text-xl font-semibold mb-2">
+        Student-Focused Assistance
+      </h3>
+      <p className="text-gray-600">
+        Our goal is to help students understand concepts and improve academic performance.
+      </p>
+    </div>
 
-          <li>
-            Student-focused learning support
-          </li>
+  </div>
 
-        </ul>
-
-
-      </section>
-
-
-
+</section>
       {/* Services Schema */}
 
       <script
