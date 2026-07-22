@@ -92,15 +92,7 @@ export default function BlogPost() {
 
         <div className="mt-10">
 
-          <Image
-            src="/blog-assignment-help.jpg"
-            alt="Student getting online assignment help"
-            width={1200}
-            height={630}
-            className="rounded-xl w-full"
-            priority
-          />
-
+          
         </div>
 
 
