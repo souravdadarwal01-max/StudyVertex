@@ -35,7 +35,10 @@ export function getBlog(slug: string) {
     return null;
   }
 
-  const fileContent = fs.readFileSync(filePath, "utf8");
+  const fileContent = fs.readFileSync(
+    filePath,
+    "utf8"
+  );
 
   return matter(fileContent);
 }
